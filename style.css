@@ -2,43 +2,51 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   min-height: 400px;
   background-color: #fff;
   background-size: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #7d1424;
+}
+
+.page-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .container {
-  font-family: "Open Sans", sans-serif;
-  color: #7d1424;
   background-color: #fffce6;
+  display: inline-block;
+width: 33%;
   text-align: center;
+  /*
   padding: 40px;
   margin: auto;
   width: 50%;
   margin-top: 20vh;
+  */
 }
 
-.page-title {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.page-subtitle {
+.container-title {
   font-size: 18px;
   margin-bottom: 40px;
 }
 
-.brl-form {
+.convert-form {
   margin-bottom: 40px;
   font-size: 24px;
 }
 
-.brl-form > .text {
+.convert-form > .text {
   font-size: 24px;
 }
 
-.brl-form > input[type="text"] {
+.convert-form > input[type="text"] {
   color: #7d1424;
   width: 20%;
   background-color: #fcf7d3;
@@ -46,7 +54,7 @@ body {
   font-size: inherit;
 }
 
-.brl-form > input[type="button"] {
+.convert-form > input[type="button"] {
   background: none;
   border: 1px #7d1424 solid;
   cursor: pointer;
@@ -55,11 +63,11 @@ body {
   font-size: 16px;
 }
 
-.real-text {
+.converted-value {
   font-size: 28px;s
 }
 
-.real-text > span {
+.converted-value > span {
   font-size: 60px;
   font-weight: bold;
   margin-left: 40px;

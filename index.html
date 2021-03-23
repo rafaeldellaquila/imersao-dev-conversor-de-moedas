@@ -11,30 +11,66 @@
     <title>Imersão Dev - Aula 01</title>
   </head>
   <body>
+    <h1 class="page-title">Conversores</h1>
     <div class="container">
-      <h1 class="page-title">Conversor de moedas</h1>
-      <p class="page-subtitle">Converta os valores do</p>
-      <form class="brl-form">
-        <label class="text" for="valorDolar">Valor em U$D:</label>
-        <input type="text" id="dolarValue" name="valorDolar" />
+      <p class="container-title">Converta os valores do Dolar</p>
+      <form class="convert-form">
+        <label class="text" for="cathValue">Valor em U$D:</label>
+        <input type="text" id="cathValue" name="cathValue" />
         <input
-          onclick="getValue()"
+          onclick="getValueDolar()"
           class="btn"
           type="button"
           value="Converter"
         />
       </form>
-      <p class="real-text">
-        Este é o valor em R$:<span id="realValue"> </span>
-      </p>
-      <p class="footer">
-        <a href="http://www.twitter.com/rfldllql" target="_blank">@rfldllql</a>
-        feat.
-        <a href="http://www.twitter.com/AluraOnline" target="_blank"
-          >@AluraOnline</a
-        >
+      <p class="converted-value">
+        Este é o valor em R$:<br /><span id="convertedValue"> </span>
       </p>
     </div>
+
+    <div class="container">
+      <p class="container-title">Converta os valores do Euro</p>
+      <form class="convert-form">
+        <label class="text" for="cathValue">Valor em €UR:</label>
+        <input type="text" id="cathValueEuro" name="cathValue" />
+        <input
+          onclick="getValueEuro()"
+          class="btn"
+          type="button"
+          value="Converter"
+        />
+      </form>
+      <p class="converted-value">
+        Este é o valor em R$:<br /><span id="convertedValueEuro"> </span>
+      </p>
+    </div>
+
+    <div class="container">
+      <p class="container-title">Converta os valores de Anos Luz</p>
+      <form class="convert-form">
+        <label class="text" for="cathValue">Valor em KM:</label>
+        <input type="text" id="cathValueKm" name="cathValue" />
+        <input
+          onclick="getValueLight()"
+          class="btn"
+          type="button"
+          value="Converter"
+        />
+      </form>
+      <p class="converted-value">
+        Este é o valor em A/Luz:<br /><span id="convertedValueLight"> </span>
+      </p>
+    </div>
+
+    <p class="footer">
+      <a href="http://www.twitter.com/rfldllql" target="_blank">@rfldllql</a>
+      feat.
+      <a href="http://www.twitter.com/AluraOnline" target="_blank"
+        >@AluraOnline</a
+      >
+    </p>
+
     <script src="script.js"></script>
   </body>
 </html>
