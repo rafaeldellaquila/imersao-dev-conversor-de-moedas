@@ -55,11 +55,11 @@ body {
   font-size: 16px;
 }
 
-.dolar-text {
+.real-text {
   font-size: 28px;s
 }
 
-.dolar-text > span {
+.real-text > span {
   font-size: 60px;
   font-weight: bold;
   margin-left: 40px;
