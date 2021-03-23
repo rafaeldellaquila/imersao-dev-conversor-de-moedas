@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Imersão Dev - Aula 01</title>
   </head>
   <body>
     <div class="container">
       <h1 class="page-title">Conversor de moedas</h1>
       <p class="page-subtitle">Descubra os valores em dolar U$</p>
-      <img
-        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
-        class="page-logo"
-        alt=""
-      />
+      <form class="brl-form">
+        <label class="text" for="valorReal">Valor em R$:</label>
+        <input type="text" id="ValorReal" name="ValorReal" />
+        <input class="btn" type="submit" value="Converter" />
+      </form>
+      <p class="dolar-text">
+        Este é o valor em U$D:<span class="dolar-number">999</span>
+      </p>
+      <p class="footer">
+        <a href="http://www.twitter.com/rfldllql">@rfldllql</a> feat.
+        <a href="http://www.twitter.com/AluraOnline">@AluraOnline</a>
+      </p>
     </div>
-    <a href="https://alura.com.br/" target="_blank">
-      <img
-        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
-        alt=""
-        class="alura-logo"
-      />
-    </a>
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
   </body>
 </html>
